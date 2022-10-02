@@ -1,8 +1,11 @@
 import React from 'react'
 
-const postCard = () => {
+const postCard = ({post}) => {
   return (
-    <div>postCard</div>
+    <div>
+      {post.title}
+      {post.excerpt}
+    </div>
   )
 }
 
