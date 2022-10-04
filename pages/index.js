@@ -4,7 +4,7 @@ import { getPosts } from '../services';
 
 
 
-export default function Home(){
+export default function Home({posts}){
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
