@@ -5,14 +5,13 @@ const categories =[{name:'React', slug:'react'}, {name:'Web development', slug:'
 
 function Header() {
   return (
-      <div className='container mx-auto px-10  mb-8'>
+      <div className='container mx-auto px-10 mb-8'>
           <div className='border-b w-full inline-block border-x-blue-400 py-8'>
               <div className='md:float-left block'>
           <Link href='/'>
             <span className='cursor-pointer font-bold text-4xl text-white'>Mohaimin</span>
           </Link>
         </div>
-        
         <div className=' hidden md:float-left md:contents'>
           {categories.map((category) => (
             <Link key={category.slug} href={`/category/${category.slug}`}>
@@ -21,9 +20,8 @@ function Header() {
               </span>
             </Link>
             ))}
-                </div>
-              
-          </div>
+        </div>
+      </div>
     </div>
   )
 }
