@@ -15,12 +15,13 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovies("Spiderman");
+    searchMovies("Batman");
   }, []);
 
   return (
     <div className="app">
-      <h1>Movie min</h1>
+      <h1>Movie-Menia</h1>
+      <p className="boi">A Movie Searching App Developed by @Mohaimin</p>
       <div className="search">
         <input
           placeholder="Search for Movies"
