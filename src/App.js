@@ -42,7 +42,7 @@ const App = () => {
       {movies?.length > 0 ? (
         <div key={movies.imdbID} className="container">
           {movies.map((movie) => (
-            <MovieCard movie={movie} />
+            <MovieCard key={movie.imdbID} movie={movie} />
           ))}
         </div>
       ) : (
